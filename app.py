@@ -10,6 +10,38 @@ st.set_page_config(
     initial_sidebar_state="collapsed"
 )
 
+# Große Link-Buttons gestalten
+st.markdown("""
+<style>
+    /* Nur die Link-Buttons anpassen */
+    div[data-testid="stLinkButton"] a {
+        min-height: 90px !important;
+        width: 100% !important;
+        border-radius: 12px !important;
+        border: 2px solid #D1D5DB !important;
+        background-color: #F8FAFC !important;
+        color: #1F2937 !important;
+        transition: all 0.2s ease !important;
+    }
+
+    /* Schriftgröße und Schriftstärke */
+    div[data-testid="stLinkButton"] a p {
+        font-size: 28px !important;
+        font-weight: 700 !important;
+        line-height: 1.3 !important;
+    }
+
+    /* Hover-Effekt */
+    div[data-testid="stLinkButton"] a:hover {
+        background-color: #E8F0FE !important;
+        border-color: #2563EB !important;
+        color: #1D4ED8 !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+</style>
+""", unsafe_allow_html=True)
+
 # Passwortprüfung
 def check_password():
     if st.session_state.get("authenticated", False):
