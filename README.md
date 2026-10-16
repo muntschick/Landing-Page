@@ -1,6 +1,6 @@
 # Landing-Page
-Landing-Page, in den streamlit-secrets sind die Links sowie das Zugangspw festgelegt.
-.streamlit/secrets.toml looks like this:
+Landing-Page, in den streamlit-secrets sind die Links sowie das Zugangspw festgelegt.  
+.streamlit/secrets.toml sieht wie folgt aus:
 ```
 [auth]
 password = "given_password"
