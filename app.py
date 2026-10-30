@@ -78,8 +78,8 @@ if not check_password():
 
 
 # Landing Page
-st.title("Willkommen zum Standard-Setting-Workshop Lesen")
-st.write("Berlin, 30.10.2026")
+st.title("Willkommen zum Standard-Setting-Workshop Schreiben")
+st.write("Berlin, 31.10.2026")
 st.divider()
 
 # Links aus Streamlit Secrets laden
